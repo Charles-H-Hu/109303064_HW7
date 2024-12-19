@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles H. Hu's Portfolio</title>
+    <link rel="stylesheet" href="109303064_HW7.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <div class="photo-panel"></div>
+            <div class="text-content">
+                <h1 id="editable-name">Charles H. Hu</h1>
+                <button id="edit-name-btn">Edit</button>
+                <h2>About Me</h2>
+                <p>Hi, I am Hsun-Ming Hu, currently a Senior in the Department of Accounting at National Chengchi University (NCCU). Throughout my academic journey, I have developed a strong foundation in financial management, data analysis, and business decision-making. My passion lies in combining accounting expertise with innovative technologies to solve real-world problems effectively.</p>
+                <h3>Contact Info</h3>
+                <p>Email: <a href="mailto:109303064@nccu.edu.tw">109303064@nccu.edu.tw</a></p>
+                <img src="109303064_HW7_school_logo.png" alt="NCCU Logo" class="nccu-logo">
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="education-section">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">2018</span>
+                        <span class="description">Introduction to Computer Science</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2019</span>
+                        <span class="description">Programming and Statistical Software</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2020</span>
+                        <span class="description">Data Structure</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="homework-section">
+                <h2>Homework List</h2>
+                <ul class="homework-list">
+                    <li><a href="https://github.com/Charles-H-Hu/HW1.git">HW1</a></li>
+                    <li><a href="https://github.com/Charles-H-Hu/HW2.git">HW2</a></li>
+                    <li><a href="https://github.com/Charles-H-Hu/HW3.git">HW3</a></li>
+                </ul>
+            </div>
+
+            <div class="music-section">
+                <h2>Favorite Music</h2>
+                <div class="music-list" id="music-list">
+                    <!-- Existing music links -->
+                </div>
+                <button id="add-music-btn">Add Music</button>
+                <p class="music-note">These are my favorite songs because they inspire me and create a great mood for working on creative tasks!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="music-form-modal" class="hidden">
+        <form id="music-form">
+            <label for="music-link">Music Link:</label>
+            <input type="url" id="music-link" required>
+            <label for="music-name">Music Name:</label>
+            <input type="text" id="music-name" required>
+            <button type="submit">Submit</button>
+            <button type="button" id="cancel-form-btn">Cancel</button>
+        </form>
+    </div>
+    <script src="109303064_HW7.js"></script>
+</body>
+</html>
+
